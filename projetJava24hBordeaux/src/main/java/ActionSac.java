@@ -9,5 +9,13 @@
  * @author Oliver
  */
 public class ActionSac extends Action {
-    
+
+    public void Poser(Manutentionnaire m) {
+        m.poserBouteille();
+    }
+
+    public void Remplir(Manutentionnaire m) {
+        m.remplirSac();
+    }
+
 }
