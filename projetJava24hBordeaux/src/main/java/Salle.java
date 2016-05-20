@@ -10,9 +10,15 @@
  */
 public class Salle {
     
+    private int x;
+    private int y;
+    private int distance;
     private int nbEmplacementsDispo;
 
-    public Salle(int nbEmplacementsDispo) {
+    public Salle(int x, int y, int nbEmplacementsDispo) {
+        this.x = x;
+        this.y = y;
+        distance = Math.abs(x) + Math.abs(y);
         this.nbEmplacementsDispo = nbEmplacementsDispo;
     }
      
@@ -28,6 +34,10 @@ public class Salle {
     public boolean isDecrementable()
     {
         return (nbEmplacementsDispo >0);
+    }
+    
+    public int getDistance(){
+        return distance;
     }
     
 }

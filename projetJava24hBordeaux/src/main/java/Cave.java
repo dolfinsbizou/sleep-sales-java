@@ -57,5 +57,23 @@ public class Cave {
     {
         return grilleSalles[x + origineX][y + origineY];
     }
+
+    public int getMaxNord() {
+        return maxNord;
+    }
+
+    public int getMaxSud() {
+        return maxSud;
+    }
+
+    public int getMaxEst() {
+        return maxEst;
+    }
+
+    public int getMaxOuest() {
+        return maxOuest;
+    }
+    
+    
     
 }
