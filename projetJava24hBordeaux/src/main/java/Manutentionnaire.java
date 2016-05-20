@@ -38,8 +38,18 @@ public class Manutentionnaire {
 
     }
 
+    public void decrementX() {
+        positionCourante = Cave.getSalle(positionCourante.getX() - 1, positionCourante.getY());
+
+    }
+
     public void incrementY() {
         positionCourante = Cave.getSalle(positionCourante.getX(), positionCourante.getY() + 1);
+
+    }
+
+    public void decrementY() {
+        positionCourante = Cave.getSalle(positionCourante.getX(), positionCourante.getY() - 1);
 
     }
 
@@ -55,8 +65,6 @@ public class Manutentionnaire {
     public void ajouterAction(Action a) {
         this.actionTour.add(a);
     }
-
-
 
     // ====================ACCESSEURS ===========================
     public void setName(String name) {

@@ -9,5 +9,21 @@
  * @author Oliver
  */
 public class Deplacement extends Action {
-    
+
+    public void Nord(Manutentionnaire m) {
+        m.incrementY();
+    }
+
+    public void Sud(Manutentionnaire m) {
+        m.decrementY();
+    }
+
+    public void Est(Manutentionnaire m) {
+        m.incrementX();
+    }
+
+    public void Ouest(Manutentionnaire m) {
+        m.decrementX();
+    }
+
 }
