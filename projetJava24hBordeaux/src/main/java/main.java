@@ -10,6 +10,7 @@
  */
 public class main {
     public static void main(String args[]){
+        new Cave(4, 2, "@1041842");
     }
     
 }

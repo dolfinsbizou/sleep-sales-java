@@ -10,4 +10,24 @@
  */
 public class Salle {
     
+    private int nbEmplacementsDispo;
+
+    public Salle(int nbEmplacementsDispo) {
+        this.nbEmplacementsDispo = nbEmplacementsDispo;
+    }
+     
+    public void decrementPlacesDispo()           
+    {
+        nbEmplacementsDispo--;
+    }
+
+    public int getNbEmplacementsDispo() {
+        return nbEmplacementsDispo;
+    }
+    
+    public boolean isDecrementable()
+    {
+        return (nbEmplacementsDispo >0);
+    }
+    
 }

@@ -8,6 +8,6 @@
  *
  * @author Oliver
  */
-public class Casier {
+public class Jeu {
     
 }
